@@ -47,8 +47,6 @@ header h2.logo span { color: #ed135a; letter-spacing: 1px; }
 .jumbotron-custom button.oval-button:hover { background-color: #c9003f; }
 
 /* FRAME */
-.frame { height: 39px; width: 100%; background-color: #ed135a; transform: rotate(-1deg); z-index: 0; position: absolute; top: 780px; }
-
 /* ABOUT */
 .about { background-color: #f4f4f4; padding-top: 124px; }
 
@@ -164,9 +162,13 @@ header h2.logo span { color: #ed135a; letter-spacing: 1px; }
 
 .gallery .photos .photo-frame:hover .frame2 { opacity: 0; }
 
-.gallery .photos .photo-frame .layer { position: absolute; background-color: rgba(237, 19, 91, 0.85); width: 100%; height: 100%; color: #FFF; font-size: 50px; line-height: 240px; opacity: 0; transition: .3s; cursor: pointer; }
+.gallery .photos .photo-frame .layer { position: absolute; background-color: rgba(237, 19, 91, 0.85); width: 100%; height: 100%; color: #FFF; font-size: 50px; line-height: 240px; opacity: 0; transition: .3s; }
+
+.gallery .photos .photo-frame .layer .fa { cursor: pointer; }
 
 .gallery .photos .photo-frame .frame2 { background-color: #ed135b; width: 100%; height: 15px; transform: rotate(1.5deg); opacity: 1; position: absolute; bottom: -7px; transition: .3s; }
+
+.gallery .photos .photo-frame .fa-search-small { display: none; }
 
 .gallery a { text-decoration: none; }
 
@@ -200,7 +202,7 @@ header h2.logo span { color: #ed135a; letter-spacing: 1px; }
 
 .download button:hover { background-color: #c9003f; }
 
-.download img { position: absolute; top: -50px; left: -230px; }
+.download img { position: absolute; top: -50px; left: -230px; width: 130%; }
 
 /* FOOTER */
 .footer { background-color: #2b2b2b; color: #FFF; height: 146px; display: block; }
@@ -213,9 +215,26 @@ header h2.logo span { color: #ed135a; letter-spacing: 1px; }
 
 .footer p span { color: #ed135a; font-weight: 700; }
 
+@media (max-width: 1175px) { .about .section-text-col { padding-left: 30px; } }
+
 @media (max-width: 1036px) { .join .row .col-center-sm { text-align: center; }
-  .download img { position: absolute; top: 0; left: -230px; width: 140%; }
   .quotes p { font-size: 19px; } }
+
+@media (max-width: 991px) { section > .container { padding-bottom: 100px; }
+  .section-headlines { margin-top: 30px; }
+  .about img { position: static; width: 100%; }
+  .about .section-text-col { text-align: center; }
+  .about .section-text-col .line { margin-left: auto; margin-right: auto; }
+  .services { margin-top: 0; padding-top: 50px; }
+  .download img { position: static; width: 100%; }
+  .download .col-12 { text-align: center; }
+  .download .col-12 .line { margin-left: auto; margin-right: auto; }
+  .gallery .gallery-row .photos .photo-frame .layer { display: none; }
+  .gallery .gallery-row .photos .photo-frame .frame2 { transform: rotate(1.2deg); }
+  .gallery .gallery-row .photos .photo-frame:hover .frame2 { opacity: 1; }
+  .gallery .gallery-row .photos .photo-frame .fa-search-small { display: block; color: #fff; background-color: rgba(237, 19, 90, 0.6); padding: 2px 2px 4px 4px; border-radius: 20%; font-size: 40px; position: absolute; top: 10px; right: 10px; }
+  .prices [class*="col-"]:hover .price { background-color: #595959; }
+  .prices .price2 button.oval-button:hover { background-color: #ed135a; } }
 
 @media (max-width: 811px) { .jumbotron-custom { text-align: center; padding-top: 225px; }
   .jumbotron-custom h1 { text-transform: uppercase; font-size: 46px; letter-spacing: 1px; font-weight: lighter; }
@@ -228,14 +247,11 @@ header h2.logo span { color: #ed135a; letter-spacing: 1px; }
 
 @media (max-width: 767px) { section > .container { padding-bottom: 50px; }
   .services, .prices, .services2, .gallery, .download { padding-top: 50px; margin-top: 0; }
-  .about img { display: none; }
-  .services .services-icons { margin-top: 30px; }
   .services .services-icons h4.headline-info { margin-top: 10px; margin-bottom: 20px; }
   .prices .price { width: 60%; margin-top: 30px; }
   .prices .price2 { width: 60%; }
-  .gallery .photos { width: 80%; background-color: #f4f4f4; margin: 0 auto; padding-bottom: 20px; }
+  .gallery .photos { background-color: #f4f4f4; margin: 0 auto; padding-bottom: 20px; }
   .join h2 { font-size: 28px; }
-  .download img { display: none; }
   .quotes p { line-height: 30px; }
   .quotes h2 { font-size: 55px; }
   .quotes a { font-size: 60px; } }
