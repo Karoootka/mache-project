@@ -13,9 +13,9 @@ section > .container { padding-bottom: 124px; }
 
 .section-paragraph { font-size: 15px; line-height: 30px; color: #5a5a5a; }
 
-.oval-button { background-color: #ed135a; width: 200px; height: 50px; border-radius: 24px; border: none; transition: .3s; cursor: pointer; text-transform: uppercase; color: #FFF; font-size: 15px; font-weight: 700; text-decoration: none; }
+.oval-button { background-color: #ed135b; width: 200px; height: 50px; border-radius: 24px; border: none; transition: .3s; cursor: pointer; text-transform: uppercase; color: #FFF; font-size: 15px; font-weight: 700; text-decoration: none; }
 
-.headline-info { text-transform: uppercase; color: #ed135a; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
+.headline-info { text-transform: uppercase; color: #ed135b; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
 
 /* HEADER */
 header { background: url("../images/back.png"); background-repeat: no-repeat; background-size: cover; background-position: center; height: 100vh; color: #FFF; padding-top: 1.5rem; position: relative; z-index: 1; }
@@ -24,11 +24,11 @@ header nav.navbar { float: right; }
 
 header h2.logo { display: inline-block; font-size: 25px; font-weight: 900; padding-top: 0.5rem; }
 
-header h2.logo span { color: #ed135a; letter-spacing: 1px; }
+header h2.logo span { color: #ed135b; letter-spacing: 1px; }
 
 header .navbar-dark .navbar-nav .nav-link { color: #fff; transition: .3s; font-weight: 700; font-size: 16px; }
 
-header .navbar-dark .navbar-nav .nav-link:hover { color: #ed135a; }
+header .navbar-dark .navbar-nav .nav-link:hover { color: #ed135b; }
 
 header .navbar-dark .navbar-toggler { border-color: rgba(255, 255, 255, 0.4); }
 
@@ -50,17 +50,17 @@ header .navbar-dark .navbar-toggler { border-color: rgba(255, 255, 255, 0.4); }
 
 .about .container { position: relative; }
 
-.about .frame { height: 39px; width: 100%; background-color: #ed135a; transform: rotate(-1deg); z-index: 0; position: absolute; top: -23px; }
+.about .frame { height: 39px; width: 100%; background-color: #ed135b; transform: rotate(-1deg); z-index: 0; position: absolute; top: -23px; }
 
 .about .line { margin-left: 0; }
 
 .about img { position: absolute; top: -10px; }
 
-.about button { color: #ed135a; border: none; background-color: #f4f4f4; margin-top: 50px; cursor: pointer; }
+.about button { color: #ed135b; border: none; background-color: #f4f4f4; margin-top: 50px; cursor: pointer; }
 
 .about button p { text-transform: uppercase; font-size: 15px; font-weight: 700; display: inline-block; margin-right: 10px; }
 
-.about button i.fa { font-size: 11px; border: 1px solid #ed135a; width: 30px; height: 30px; line-height: 30px; border-radius: 50%; }
+.about button i.fa { font-size: 11px; border: 1px solid #ed135b; width: 30px; height: 30px; line-height: 30px; border-radius: 50%; }
 
 /* SERVICES */
 .services { text-align: center; margin-top: 30px; padding-top: 124px; }
@@ -80,7 +80,7 @@ header .navbar-dark .navbar-toggler { border-color: rgba(255, 255, 255, 0.4); }
 
 .quotes p { color: #FFF; font-size: 25px; letter-spacing: 1px; font-style: italic; font-weight: 300; line-height: 40px; }
 
-.quotes i.fa { font-size: 60px; color: #ed135a; }
+.quotes i.fa { font-size: 60px; color: #ed135b; }
 
 .quotes a { font-size: 80px; text-decoration: none; color: #5a5a5a; line-height: 500px; font-weight: 300; transition: .3s; display: inline-block; }
 
@@ -213,7 +213,7 @@ header .navbar-dark .navbar-toggler { border-color: rgba(255, 255, 255, 0.4); }
 
 .footer p { display: inline-block; text-transform: uppercase; font-size: 15px; padding: 0 5px; margin: 0; }
 
-.footer p span { color: #ed135a; font-weight: 700; }
+.footer p span { color: #ed135b; font-weight: 700; }
 
 @media (max-width: 1175px) { .about .section-text-col { padding-left: 30px; } }
 
@@ -238,7 +238,7 @@ header .navbar-dark .navbar-toggler { border-color: rgba(255, 255, 255, 0.4); }
   .gallery .gallery-row .photos .photo-frame:hover .frame2 { opacity: 1; }
   .gallery .gallery-row .photos .photo-frame .fa-search-small { display: block; color: #fff; background-color: rgba(237, 19, 90, 0.6); padding: 2px 2px 4px 4px; border-radius: 20%; font-size: 40px; position: absolute; top: 10px; right: 10px; }
   .prices [class*="col-"]:hover .price { background-color: #595959; }
-  .prices .price2 button.oval-button:hover { background-color: #ed135a; } }
+  .prices .price2 button.oval-button:hover { background-color: #ed135b; } }
 
 @media (max-width: 811px) { .jumbotron-custom { padding-top: 15%; }
   .jumbotron-custom button.oval-button { margin-top: 30px; }

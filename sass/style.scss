@@ -1,3 +1,5 @@
+$base-color: #ed135b;
+
 /* GLOBAL */
 
 * {
@@ -22,7 +24,7 @@ section>.container {
 }
 
 .line {
-  border-bottom: 2px solid #ed135b;
+  border-bottom: 2px solid $base-color;
   width: 200px;
   height: 0px;
   margin: 36px auto;
@@ -44,7 +46,7 @@ section>.container {
 }
 
 .oval-button {
-  background-color: #ed135a;
+  background-color: $base-color;
   width: 200px;
   height: 50px;
   border-radius: 24px;
@@ -60,7 +62,7 @@ section>.container {
 
 .headline-info {
   text-transform: uppercase;
-  color: #ed135a;
+  color: $base-color;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -85,7 +87,7 @@ section>.container {
 //       list-style-type: none;
 //       &:hover {
 //         a {
-//           color: #ed135a;
+//           color: $base-color;
 //           text-decoration: none;
 //         }
 //       }
@@ -105,7 +107,7 @@ section>.container {
 //     font-size: 25px;
 //     font-weight: 900;
 //     span {
-//       color: #ed135a;
+//       color: $base-color;
 //       letter-spacing: 1px;
 //     }
 //   }
@@ -130,7 +132,7 @@ header {
     font-weight: 900;
     padding-top: 0.5rem;
     span {
-      color: #ed135a;
+      color: $base-color;
       letter-spacing: 1px;
     }
   }
@@ -140,7 +142,7 @@ header {
     font-weight: 700;
     font-size: 16px;
     &:hover {
-      color: #ed135a;
+      color: $base-color;
     }
   }
   .navbar-dark .navbar-toggler {
@@ -190,7 +192,7 @@ header {
   .frame {
     height: 39px;
     width: 100%;
-    background-color: #ed135a;
+    background-color: $base-color;
     transform: rotate(-1deg);
     z-index: 0;
     position: absolute;
@@ -204,7 +206,7 @@ header {
     top: -10px;
   }
   button {
-    color: #ed135a;
+    color: $base-color;
     border: none;
     background-color: #f4f4f4;
     margin-top: 50px;
@@ -218,7 +220,7 @@ header {
     }
     i.fa {
       font-size: 11px;
-      border: 1px solid #ed135a;
+      border: 1px solid $base-color;
       width: 30px;
       height: 30px;
       line-height: 30px;
@@ -278,7 +280,7 @@ header {
   }
   i.fa {
     font-size: 60px;
-    color: #ed135a;
+    color: $base-color;
  }
   a {
     font-size: 80px;
@@ -605,7 +607,7 @@ header {
     padding: 0 5px;
     margin: 0;
     span {
-      color: #ed135a;
+      color: $base-color;
       font-weight: 700;
     }
   }
@@ -725,7 +727,7 @@ header {
     .price2 {
       button.oval-button {
         &:hover {
-          background-color: #ed135a;
+          background-color: $base-color;
         }
       }
     }
