@@ -70,71 +70,33 @@ section>.container {
 
 /* HEADER */
 
-// header {
-//   background: url('../images/back.png');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
-//   height: 100vh;
-//   color: #FFF;
-//   padding-top: 39px;
-//   position: relative;
-//   z-index: 1;
-//   nav {
-//     float: right;
-//     ul li {
-//       display: inline-block;
-//       list-style-type: none;
-//       &:hover {
-//         a {
-//           color: $base-color;
-//           text-decoration: none;
-//         }
-//       }
-//       a {
-//           color: #FFF;
-//           font-size: 16px;
-//           padding: 0 7px;
-//           font-weight: 700;
-//           line-height: 42px;
-//           transition: .3s;
-//           cursor: pointer;
-//       }
-//     }
-//   }
-//   h2.logo {
-//     display: inline-block;
-//     font-size: 25px;
-//     font-weight: 900;
-//     span {
-//       color: $base-color;
-//       letter-spacing: 1px;
-//     }
-//   }
-// }
-
 header {
   background: url('../images/back.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   color: #FFF;
-  padding-top: 1.5rem;
   position: relative;
   z-index: 1;
   nav.navbar {
-    float: right;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
   }
   h2.logo {
-    display: inline-block;
     font-size: 25px;
     font-weight: 900;
-    padding-top: 0.5rem;
     span {
       color: $base-color;
       letter-spacing: 1px;
     }
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  .navbar-nav {
+    text-align: center;
   }
   .navbar-dark .navbar-nav .nav-link {
     color: #fff;
@@ -157,6 +119,7 @@ header {
 .jumbotron-custom {
   text-align: center;
   padding-top: 12%;
+  padding-bottom: 60px;
   h1 {
     text-transform: uppercase;
     font-size: 46px;
@@ -616,11 +579,11 @@ header {
 // MEDIA QUERIES
 
 @media (max-width: 1175px) {
-  .about {
-    .section-text-col {
-      padding-left: 30px;
-    }
-  }
+  // .about {
+  //   .section-text-col {
+  //     padding-left: 30px;
+  //   }
+  // }
 }
 
 @media (max-width: 1036px) {
@@ -765,8 +728,13 @@ header {
     margin-top: 0;
   }
 
+  .navbar {
+    background-color: rgba(0,0,0,0.3);
+    padding-bottom: 1rem;
+  }
+
   .jumbotron-custom {
-    padding-top: 25%;
+    // padding-bottom: 40px;
     h1 {
       font-size: 27px;
     }
@@ -829,12 +797,21 @@ header {
 
 }
 
+@media (max-width: 767px ) and (orientation: landscape) {
+  .header {
+    height: 100vh;
+  }
+}
+
 
 @media (max-width: 576px) {
 
   .services {
     margin-top: 0;
-    padding-top: 124px;
+  }
+
+  .services .services-icons {
+    margin-top: 30px;
   }
 
   .quotes {
@@ -845,6 +822,10 @@ header {
     h2 {
       font-size: 35px;
     }
+  }
+
+  .gallery a h5 {
+    margin-top: 30px;
   }
 
   .more-info {
