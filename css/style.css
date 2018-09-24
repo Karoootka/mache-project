@@ -37,17 +37,19 @@ header .navbar-dark .navbar-nav .nav-link:hover { color: #ed135b; }
 header .navbar-dark .navbar-toggler { border-color: rgba(255, 255, 255, 0.4); }
 
 /* JUMBOTRON */
-.jumbotron-custom { text-align: center; padding-top: 12%; padding-bottom: 60px; }
+.jumbotron-container { height: calc(100vh - 60px); display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.jumbotron-custom h1 { text-transform: uppercase; font-size: 46px; letter-spacing: 1px; font-weight: lighter; }
+.jumbotron-container .jumbotron-custom { text-align: center; padding-top: 12%; padding-bottom: 60px; }
 
-.jumbotron-custom h1 span { font-weight: 900; }
+.jumbotron-container .jumbotron-custom h1 { text-transform: uppercase; font-size: 46px; letter-spacing: 1px; font-weight: lighter; }
 
-.jumbotron-custom p { font-size: 22px; letter-spacing: 1px; font-weight: 300; line-height: 35px; }
+.jumbotron-container .jumbotron-custom h1 span { font-weight: 900; }
 
-.jumbotron-custom button.oval-button { margin-top: 70px; }
+.jumbotron-container .jumbotron-custom p { font-size: 22px; letter-spacing: 1px; font-weight: 300; line-height: 35px; }
 
-.jumbotron-custom button.oval-button:hover { background-color: #c9003f; }
+.jumbotron-container .jumbotron-custom button.oval-button { margin-top: 70px; }
+
+.jumbotron-container .jumbotron-custom button.oval-button:hover { background-color: #c9003f; }
 
 /* ABOUT */
 .about { background-color: #f4f4f4; padding-top: 124px; position: relative; }
@@ -242,16 +244,16 @@ header .navbar-dark .navbar-toggler { border-color: rgba(255, 255, 255, 0.4); }
   .prices [class*="col-"]:hover .price { background-color: #595959; }
   .prices .price2 button.oval-button:hover { background-color: #ed135b; } }
 
-@media (max-width: 811px) { .jumbotron-custom { padding-top: 15%; }
-  .jumbotron-custom button.oval-button { margin-top: 30px; }
+@media (max-width: 811px) { .jumbotron-container .jumbotron-custom h1 { font-size: 27px; }
+  .jumbotron-container .jumbotron-custom p { font-size: 15px; }
+  .jumbotron-container .jumbotron-custom button.oval-button { width: 150px; height: 40px; margin-top: 0; }
+  .jumbotron-container .jumbotron-custom .line { margin: 20px auto; }
   .quotes p { font-size: 18px; }
   .footer { height: 80px; } }
 
 @media (max-width: 767px) { section > .container { padding-bottom: 50px; }
   .services, .prices, .services2, .gallery, .download { padding-top: 50px; margin-top: 0; }
   .navbar { background-color: rgba(0, 0, 0, 0.3); padding-bottom: 1rem; }
-  .jumbotron-custom h1 { font-size: 27px; }
-  .jumbotron-custom p { font-size: 15px; }
   .about .frame { top: -29px; }
   .services .services-icons h4.headline-info { margin-top: 10px; margin-bottom: 20px; }
   .prices .price { width: 60%; margin-top: 30px; }
